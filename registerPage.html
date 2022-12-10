@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body class="regBody">
+    <div class="main regMain">
+      <div class="image">
+        <img src="./images/Image Placeholder 2.png" alt="Image Placeholder" />
+      </div>
+      <div class="info reg">
+        <h3 class="reg-h2">Create Account</h3>
+        <p class="reg-p">
+          Go ahead and sign up, let everyone know how awesome you are!
+        </p>
+        <form id="form" action="">
+          <div id="text1holder" class="input-container">
+            <i class="fa-regular fa-user"></i>
+            <input
+              id="text1input"
+              type="text"
+              placeholder="Username"
+              minlength="5"
+              maxlength="15"
+            />
+          </div>
+          <div id="text2holder" class="input-container">
+            <i class="fa-regular fa-envelope"></i>
+            <input id="text2input" type="text" placeholder="Email" />
+          </div>
+          <div id="pass1holder" class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input id="pass1input" type="password" placeholder="Password" />
+          </div>
+          <div id="pass2holder" class="input-container">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              id="pass2input"
+              type="password"
+              placeholder="Confirm password"
+            />
+          </div>
+          <button id="submit" type="submit" class="submit">
+            Create Account
+          </button>
+        </form>
+        <small id="errMessage" class="userError"></small>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/219d361f95.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./register.js"></script>
+  </body>
+</html>

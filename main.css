@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background: linear-gradient(to right, rgb(227 205 233) 36%, rgba(194, 208, 238, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 100px;
+    gap: 10px;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
+    gap: 3.5rem;
+
+    width: 68rem;
+    height: fit-content;
+
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .info h2 {
+    width: 17.5rem;
+    height: 3.72rem;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 120%;
+
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.main .info p {
+    width: 25rem;
+    height: 2.111rem;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.33rem;
+    line-height: 160%;
+    margin: 1.5rem 0;
+}
+
+.main .info a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2.777rem;
+
+    width: 25rem;
+    height: 3.333rem;
+
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    box-shadow: 0px 6px 18px #9CADF2;
+    border-radius: 10px;
+
+}
+
+/* regiseration page */
+
+.reg {
+    justify-content: space-around;
+}
+
+.reg-p {
+    margin-top: -1rem !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .input-container {
+    position: relative;
+    height: 5rem;
+}
+
+form .input-container i {
+    position: absolute;
+    top: 30%;
+    left: 1rem;
+}
+
+.reg-h2 {
+    width: 100%;
+    height: 50px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #2D2D2D;
+}
+
+form input {
+    padding-left: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    background: #FFFFFF;
+    border: 1px solid #DBE3FF;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+}
+
+.submit {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2.777rem;
+
+    width: 100%;
+    height: 3.333rem;
+
+    background: linear-gradient(113.87deg, #2663DF 14.81%, #758FF0 88.76%);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.userError {
+    color: red;
+    display: block;
+    margin: 0px 0 0 0.7rem;
+}
+
+.suc {
+    width: fit-content;
+}
+
+@media screen and (max-width: 1100px) {
+    .main {
+        width: 60rem;
+        padding: 2rem;
+    }
+
+    .main .info h2 {
+        width: inherit;
+    }
+
+    .main .info p {
+        width: inherit;
+    }
+
+    .main .info a {
+        width: inherit;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    body {
+        height: 100vh;
+    }
+
+    .main {
+        flex-direction: column;
+        height: fit-content;
+        padding: 4rem 3rem;
+        width: fit-content;
+        text-align: center;
+    }
+
+    .info {
+        margin-top: -1rem;
+        text-align: center;
+    }
+
+    .info h2 {
+        justify-content: center;
+    }
+
+    .regBody {
+        height: fit-content;
+        padding: 1rem 3rem;
+    }
+
+    .regMain {
+        height: fit-content;
+    }
+
+    .reg-h2 {
+        justify-content: center;
+        margin: -1rem 0 1rem 0;
+    }
+
+    .reg-p {
+        margin: 0 0 2rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+        background: none;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .image img {
+        width: 20rem;
+    }
+
+    .main .info h2 {
+        font-size: 3rem;
+    }
+
+    .main .info p {
+        margin-bottom: 4rem;
+    }
+}
